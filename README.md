@@ -14,9 +14,13 @@ I can hear everyone shout "we dont need another 6502 assembler", and they are pr
 ASM502 uses standard 6502 assembler syntax.
 
 To compile a 6502 assembler source "myprog.s" use:
+
 asm502 myprog.s myprog.prg
+
 (Specify correct name/path at start, ie: ./asm502.elf myprog.s myprog.prg )
+
 ASM502 generates the 2 byte header with the start address (from the .ORG statement in the code).
+
 If you want to save the listing file use:
 asm502 myprog.s myprog.prg >myprog.lst
 Load "myprog.prg" on your emulator (or real comp) and start with RUN (or SYS XXXX etc).
@@ -24,6 +28,7 @@ Load "myprog.prg" on your emulator (or real comp) and start with RUN (or SYS XXX
 
 Internally ASM502 works with 32 bit numbers (ie the default C integer) depending on the C compiler options used.
 Numbers can be decimal (default), hex (precede with $) or binary (precede with %) ie:
+
 .byte 160, $A0, %10100000 ; Number 160 in decimal, hex, binary..
 
 Unary operators can preceed an expression:
@@ -51,6 +56,7 @@ expr1 % expr2 ; Modulus (remainder of division)
 A variable must start with upper/lower case letter, then include numbers or underlines. ie:
 
 My_var1 = (($123 + %1010 + 1234) * 2) & $ffff ; Assign const val to (My_var1)
+
 .word (My_var1 >> 1) + (33 * $22), $abc1, 0 ; Use that in .word code definition..
 
 Here are some example lines:
