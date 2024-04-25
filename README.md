@@ -7,8 +7,8 @@ ASM502
 --------
 
 ASM502 is a 6502 assembler written in C99-compliant C code. It is small and light, and yet implements a useful subset of CA65 functionality.
-asm502-115a.zip
-(62.49 KiB) Downloaded 16 times
+
+
 I can hear everyone shout "we dont need another 6502 assembler", and they are probably right! In defence ASM502 has a few interesting points - it is (fairly) modern, compatible with a useful subset of CA65, and it is small, it can even compile/run (with cc65) on a Commodore 64 or Plus 4.
 
 ASM502 uses standard 6502 assembler syntax.
