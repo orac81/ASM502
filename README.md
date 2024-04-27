@@ -32,11 +32,11 @@ Numbers can be decimal (default), hex (precede with $) or binary (precede with %
 .byte 160, $A0, %10100000 ; Number 160 in decimal, hex, binary..
 
 Unary operators can preceed an expression:
-<(expression) ; Low byte of expression
+ <(expression) ; Low byte of expression
 
->(expression) ; High byte of expression
+ >(expression) ; High byte of expression
 
--(expression) ; Negate expression
+ -(expression) ; Negate expression
 
 ASM502 supports variables and can evaluate complex expressions. It uses C-style operators "<<,>>,=,!=,<,>,&,|,^,+,-,*,/,%".
 
@@ -103,13 +103,13 @@ Here is a more complete simple example program to print some text.
 
 ;---------------------------------------------------------------------------------------
 
-; Simple program to print some text.
+    ; Simple program to print some text.
 
-.org 828 ; Put code in C64 tape buffer, call with SYS 828.. (change for non-commodore computers..)
+ .org 828 ; Put code in C64 tape buffer, call with SYS 828.. (change for non-commodore computers..)
   
-printchar = $ffd2 ; Routine to print accumulator as char on screen (change for non-commodore computers..)
+ printchar = $ffd2 ; Routine to print accumulator as char on screen (change for non-commodore computers..)
 
-IS_C64=1 ; Set variable IS_C64 to 1
+ IS_C64=1 ; Set variable IS_C64 to 1
 
 printtext: ; jsr printtext starts this program.
 
