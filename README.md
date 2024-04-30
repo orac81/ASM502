@@ -19,12 +19,12 @@ ASM502 supports variables and can evaluate complex expressions. It uses C-style 
  
  -expr1 << expr2	; Shift expr1 left by expr2
  -expr1 >> expr2	; Shift expr1 right by expr2
- -expr1 = expr2		; True if equal
- -expr1 != expr2	; True if not equal
- -expr1 < expr2		; True if less
- -expr1 < expr2		; True if more
- -expr1 & expr2		; Bitwise AND
- -expr1 | expr2		; Bitwise OR
+-expr1 = expr2		; True if equal
+-expr1 != expr2	; True if not equal
+-expr1 < expr2		; True if less
+-expr1 < expr2		; True if more
+-expr1 & expr2		; Bitwise AND
+-expr1 | expr2		; Bitwise OR
  -expr1 ^ expr2		; Bitwise EOR (EXCLUSIVE  OR)
  -expr1 + expr2		; Add
  -expr1 - expr2		; Subtract
