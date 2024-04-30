@@ -16,9 +16,9 @@ Unary operators can preceed an expression:
 -  -(expression)	   ; Negate expression
  
 ASM502 supports variables and can evaluate complex expressions. It uses C-style operators "<<,>>,=,!=,<,>,&,|,^,+,-,*,/,%".
- 
- -expr1 << expr2	; Shift expr1 left by expr2
- -expr1 >> expr2	; Shift expr1 right by expr2
+```
+-expr1 << expr2	; Shift expr1 left by expr2
+-expr1 >> expr2	; Shift expr1 right by expr2
 -expr1 = expr2		; True if equal
 -expr1 != expr2	; True if not equal
 -expr1 < expr2		; True if less
@@ -31,7 +31,7 @@ ASM502 supports variables and can evaluate complex expressions. It uses C-style 
  -expr1 * expr2		; Multiply
  -expr1 / expr2		; Divide
  -expr1 % expr2		; Modulus (remainder of division)
-
+```
 A variable must start with upper/lower case letter, then include numbers or underlines.  ie:
 
 ```
