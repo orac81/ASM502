@@ -39,17 +39,17 @@ expr1 % expr2	; Modulus (remainder of division)
 A variable must start with upper/lower case letter, then include numbers or underlines.  ie:
 
 ```
-   My_var1 = (($123 + %1010 + 1234) * 2) & $ffff		; Assign const val to (My_var1)
-   .word (My_var1 >> 1) + (33 * $22), $abc1, 0 		; Use that in .word code definition..
+   My_var1 = (($123 + %1010 + 1234) * 2) & $ffff	   ; Assign const val to (My_var1)
+   .word (My_var1 >> 1) + (33 * $22), $abc1, 0   ; Use that in .word code definition..
 ```
 
 Here are some example lines:
 
 ```
 						; Comments follow a semicolon.
-label:					; lable can be a destination for a branch or jump or data. 
-  lda #65				; 6502 load accumulator with decimal 65.
-  .byte 1,2,3,4			; Define 4 bytes.
+label:		; lable can be a destination for a branch or jump or data. 
+  lda #65	; 6502 load accumulator with decimal 65.
+  .byte 1,2,3,4	; Define 4 bytes.
   .word $1234, $abcd	; Define 2 words (same as: .byte $34,$12,$cd,$ab)
   .byte <label, >label	; Low and high byte of label
 ```
