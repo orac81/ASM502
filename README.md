@@ -12,9 +12,9 @@ ASM502 uses standard 6502 assembler syntax. Internally ASM502 works with 32 bit 
 
 Unary operators can preceed an expression:
 ```
--  <(expression)    ; Low byte of expression
--  >(expression)    ; High byte of expression
--  -(expression)	   ; Negate expression
+ <(expression)    ; Low byte of expression
+ >(expression)    ; High byte of expression
+ -(expression)	   ; Negate expression
 ```
  
 ASM502 supports variables and can evaluate complex expressions. It uses C-style operators "<<,>>,=,!=,<,>,&,|,^,+,-,*,/,%".
